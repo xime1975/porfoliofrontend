@@ -4,76 +4,253 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d699ba8458.js" crossorigin="anonymous"></script>
+    
+    <!-- estilos -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <title>document</title>
 </head>
 <body>
-    <h1>esto es un h1</h1>
-    <h2>esto es un h2</h2>
-    <h3>esto es un h3</h3>
-    <h4>esto es un h4</h4>
-    <h5>esto es un h5</h5>
-    <h6>esto es un h6</h6>
-    <p><b>un parrrafo cualquiera</b><hr>
-    <strong>otro parrafo cualquiera</strong></p>
+    <!-- seccion de navbar -->
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar" target="_blank"><img class="logoap"src="assets/img/logoap.png" alt="logo-argentina-prog"></a>
+              
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item"><i class="fa-brands fa-linkedin"></i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-github"></i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-instagram"></i></li>
+                  </ul>
+                  
+                  <!-- Button trigger modal -->
+                 <button type="button" class="btn btn-lingt" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="fa-solid fa-lock"></i>
+                 </button>   
+                 
+                 <button type="button" class="btn btn-lingt"><i class="fa-solid fa-lock-open"></i>
+                </button> 
+ 
+              </div>
+            </div>
+          </nav>
+
+    </section>
+ 
+
+  
+     <!--Sobre mi-->  
+     <section id="sobre" class="border">
+     <h2 class="text-center mt-4 gb-3">Sobre mi</h2> 
+     <div class="container text-center">
+       <div class="row">
+         <div class="col-6">
+         <div>
+         <h1 class="nombrePerfil">Ximena Andrea <span class="apellido">Pardo</span> </h1> 
+         <h4>Masoterapeuta</h4>
+        </div> 
+         </div>
+         <div class="col col-6">
+          <div class="banner">
+            <img class="imgPerfil" src="assets/img/IMG-20191109-WA0018.jpeg" alt="xime" title="masoterapeuta">
+          </div>
+        </div>
+       </div>
+      </div> 
+     </section> 
+
+     <!-- seccion editar -->
+     <section id="editsobre" class="bg-dark p-4">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-lingt" data-bs-toggle="modal" data-bs-target="#imgPerfilModal">Editar imagen
+            </button>   
+            
+          </div>
+          <div class="col">
+            <button class="btn btn-lingt">Nombre</button>
+          </div>
+          <div class="col">
+            <button class="btn btn-lingt"></button>
+            <button class="btn btn-lingt">Editar info</button>
+          </div>
+        </div>
+      </div>
+
+     </section>
+
+
+
+     
+
+      
+
+    
+   <!--Experiencia laboral-->
+     <section id="experiencia">
+    <h2>Experiencia laboral</h2>
+    </section>
+    <!--Educacion-->
+    <section>
+        <h2>Educacion</h2>
+    </section>
+    <!--Proyectos-->
+    <section>
+        <h2>Proyectos</h2>
+    </section>
+    <!--Habilidades-->
+    <section>
+        <h2>Habilidades</h2>
+     </section>
+     <hr>
+     <!--Hobbies-->
+     <section>
+        <h3>Hobbies</h3>
+        <iframe class=video width="560" height="315" src="https://www.youtube.com/embed/CO1IR0lfHmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>  
+      <hr>
+
+      <!-- mapita -->
+      <section>
+      <h3>mapitas</h3>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938404.059519632!2d2.557631591271151!3d46.59349253159796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2sFrancia!5e0!3m2!1ses!2sar!4v1669061205803!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <br>
+      <label for="">usuario</label>
+      <input type="text" placeholder="aca va tu usuario">
+
+      <label for="">contraseña</label>
+      <input type="password"placeholder="aca va tu contraseña">
+     </section> 
+
+
+       <!-- Modales-->
+       <!-- modal login -->
+       <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+    <form>
+         <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+
+            <div class="mb-3">
+                <label for="exampleInputFecha" class="form-label">Fecha</label>
+                <input type="date" class="form-control" id="exampleInputFecha">
+              </div>
+
+
+
+        </div>
+        
+        <div class="mb-3">
+            <label for="exampleEjemploSobremi"class="form-label">TextoLargo</label>
+            <textarea class="form-control" id="exampleEjemploSobremi"></textarea>
+          </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+       </form>   
+      
+    </div>
+    </div>
+  </div>
+
+  
+       <!--modal img de perfil-->
+       <div class="modal fade" id="imgPerfilModal"tabindex="-1" aria-labelledby="imgPerfilModal" aria-hidden="true">
+        <div class="modal-dialog">
+         <div class="modal-content">
+         <div class="modal-header">
+          <h1 class="modal-title fs-5" id="imgPerfilModal">Editar imagen</h1>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+ 
+         <div class="modal-body">
+     <form>
+          
+         
+         <div class="mb-3">
+          <label for="imgPerfil"class="form-label">Editar imagen</label>
+            <input type="url" placeholder="inserte url de imagen" id="imgPerfil"
+            name="imgPerfil" required> 
+           </div>
+ 
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+           <button type="submit" class="btn btn-primary">Submit</button>
+         </div>
+        </form>   
+       
+     </div>
+     </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+        
+    </body>
+      </html>
+
+  
+    
+  
+  
+   
     
 
-    <!---- <div>-->
-        <h2>otro titulo</h2>
-    <a href="https://github.com/xime1975/porfoliofrontend.git" target="_blank">click</a>
-    <br>
-    <img src="https://images.pexels.com/photos/12547195/pexels-photo-12547195.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-    <br></br>
-    <audio src="lagoenelcielo.mp3.mp3"  loop controls ></audio>
-    <!---- </div>-->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/sqPP-JHq9H8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <ol>
-        <li>elemento</li>
-        <li>elemento</li>
-        <li>elemento</li>
-        <li>elemento</li>
-        <li>elemento</li>
-    </ol>
-    <ul>
-        <li>elemento</li>
-        <li>elemento</li>
-        <li>elemento</li>
-        <li>elemento</li>
-        <li>elemento</li>
-    </ul>
-   <form>
-   <p>nombre:<input type="text" name="nombre"size"40"></p>
-   <p>password:<input type="password" name="password" size ="40"></p>
-   <p>año de nacimiento:<input type="number" name="nacido"  min="1900"> </p>
-    <p>sexo:
-        <input type="radio" name="hm"value="h" >hombre
-        <input type="radio" name="hm"value="m" >mujer
-    </p>
-    <p>
-        <input type="submit" value="enviar">
-        <input type="reset" value="borrar" >
-    </p>
-</form>
 
-    <select name="select">
-    <option value="value1">value1</option>
-    <option value="value2"selected>value2</option>
-    <option value="value3">value3</option>
-    </select>
 
-    <label for="dino-select">Choose a dinosaur:</label>
-    <select id="dino-select">
-        <optgroup label="Theropods">
-            <option>Tyrannosaurus</option>
-            <option>Velociraptor</option>
-            <option>Deinonychus</option>
-        </optgroup>
-        <optgroup label="Sauropods">
-            <option>Diplodocus</option>
-            <option>Saltasaurus</option>
-            <option>Apatosaurus</option>
-        </optgroup>
-    </select>
+
+
+   
+
     
-    
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
