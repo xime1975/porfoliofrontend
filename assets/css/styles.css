@@ -2,39 +2,32 @@
 /* clases va con "." adelante */
 /* ID va con "#" adelante */
 
-*{
+body{
     background-color: rgb(230, 216, 218);
- }
+   
+    }
     
-
-    #redes{
-        text-align: center;
-        margin: auto;
-    }
-     li{
-        list-style-type:none;
-        margin-left: -3.5;
-
-    }
-     
+    
      .nombrePerfil {
-        font-size: 4rem ;
+        font-size: 5rem ;
+        border-style: solid;
+        color: aliceblue;
      }
     
-     .apellido{
-        color: rgb(23, 16, 16) !important
-     }
+     
+     
     .video{
-      margin: 7rem 2rem 0rem 20rem;
+      margin: 7rem 2rem 0rem 7rem;
       border-style: solid black;
       }
      .mapa {
-      padding:20 %
-      border-style: solid;
+      padding:20%
+      border-style: solid ;
    }
       #sobre {
-         background-color:rgb(171, 120, 129) ;
+         background-color:rgb(171, 120, 129)
            }
-      .logoap{
-     filter: invert();
-      }
+
+           .logoap{
+            filter: invert();
+             }
